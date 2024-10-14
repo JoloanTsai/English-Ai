@@ -28,6 +28,7 @@ nanoid = "^2.0.0"
 sqlalchemy = "^2.0.35"
 ```
 
+
 ### 取得Groq api key
 
 Groq是生產AI加速硬體的公司，專門製作推理晶片，有提供免費的API來跑一些開源模型，而且速度非常快
@@ -55,6 +56,8 @@ model_name = "llama-3.1-70b-versatile"
 
 可以查看Groq Api支援哪些[模型](https://console.groq.com/docs/models)。
 
+
+
 ### 新增對話紀錄(可選)
 如果想跳過這裡，可以在env.settings.py裡讓db_path使用example.db，這是先前創建的資料庫
 
@@ -76,6 +79,8 @@ def create():
 
 也可以修改`ChatLogSystem`的部分，讓模型成為其他方面的角色。
 
+
+
 ### 開始使用
 
 執行`eng_ai.py`後即可與模型開始對話
@@ -83,6 +88,8 @@ def create():
 #### 額外指令
 `save_conversation` ： 在對話時輸入 `save_conversation` 可將對話儲存至 db_path
 `quit` ： 儲存對話紀錄並離開對話
+
+
 
 ## Reference
 
