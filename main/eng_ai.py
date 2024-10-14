@@ -44,7 +44,7 @@ class UseCommands():
         pass
 
     def history(self):
-        print(messages)
+        print("\n ====================== \n", message.content)
 
     def hello(self):
         print("Hello!")
