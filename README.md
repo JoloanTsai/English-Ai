@@ -84,6 +84,7 @@ def create():
 ### 開始使用
 
 執行`eng_ai.py`後即可與模型開始對話
+![截圖 2024-10-14 上午10 18 26](https://github.com/user-attachments/assets/b950e3e8-3a95-4173-ab91-48dd80466c11)
 
 #### 額外指令
 `save_conversation` ： 在對話時輸入 `save_conversation` 可將對話儲存至 db_path
