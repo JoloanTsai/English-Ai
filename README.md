@@ -87,6 +87,7 @@ def create():
 
 #### 額外指令
 `save_conversation` ： 在對話時輸入 `save_conversation` 可將對話儲存至 db_path
+
 `quit` ： 儲存對話紀錄並離開對話
 
 
