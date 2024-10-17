@@ -17,7 +17,12 @@
 
 ### 環境配置
 
-運行程式時會需要使用到：langchain, langchain-groq, nanoid, sqlalchemy，須事先安裝
+運行程式時會需要使用到：langchain, langchain-groq, nanoid, sqlalchemy, prompt_toolkit，須事先安裝
+``` bash
+pip install langchain langchain-groq nanoid sqlalchemy prompt_toolkit
+```
+
+
 
 以下環境確定可以運行：
 ```poetry
@@ -26,6 +31,7 @@ langchain = "^0.3.1"
 langchain-groq = "^0.2.0"
 nanoid = "^2.0.0"
 sqlalchemy = "^2.0.35"
+prompt-toolkit = "^3.0.48"
 ```
 
 
