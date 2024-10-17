@@ -6,6 +6,7 @@ from env_settings import env_init, db_path, model_name
 from langchain_groq import ChatGroq
 from nanoid import generate
 import os
+from prompt_toolkit import prompt
 
 env_init()
 
@@ -17,8 +18,6 @@ engine = create_engine(db_path, echo=True)
 session = sessionmaker(bind=engine)()
 chat_logs = session.execute(select(ChatLog)).scalars().all()
 chat_logs_sys = session.execute(select(ChatLogSystem)).scalars().all()
-
-print(chat_logs_sys[0].system_message)
 
 def messages_in(sys_logs, logs) -> list:
     messages_local = []
@@ -88,7 +87,7 @@ if __name__ == '__main__':
     print('commands_lib: ', commands_lib, end="\n\n ======================================== \n")
 
     while True :
-        input_text = input("\nYou: ")
+        input_text = prompt("\nYou: ")
 
         if input_text not in commands_lib :
             print("\nEnglish AI: ", end="")
